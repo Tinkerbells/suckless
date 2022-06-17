@@ -23,7 +23,7 @@ static const char *tags[] = { "1", "2", "3", "4", "5" };
 
 static const Rule rules[] = {
 	/* class               instance    title          tags mask     switchtotag    isfloating   monitor */
-	{ "brave-browser",     NULL,       NULL,          1 << 0,       1,             0,           -1 },
+	{ "Brave-browser",     NULL,       NULL,          1 << 0,       1,             0,           -1 },
 	{ NULL,                NULL,       "terminal",    1 << 1,       2,             0,           -1 },
 	{ NULL,                NULL,       "lf",          1 << 2,       3,             0,           -1 },
 	{ "TelegramDesktop",   NULL,       NULL,          1 << 2,       3,             0,           -1 },
