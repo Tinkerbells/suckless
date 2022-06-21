@@ -1,12 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 5;        /* border pixel of windows */
 static const int gappx              = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FantasqueSansMono Nerd Font Mono:size=10" };
+static const char *fonts[]          = { "FantasqueSansMono Nerd Font Mono:style:regular:size=12" };
 
 /* Catppuccin Macchiato theme https://github.com/catppuccin/catppuccin */
 static const char base[]            = "#24273a";
@@ -15,7 +15,7 @@ static const char overlay1[]        = "#8087a2";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { text,      base,      base},
-	[SchemeSel]  = { overlay1,  base,       base},
+	[SchemeSel]  = { overlay1,  base,       text},
 };
 
 /* tagging */
