@@ -10,7 +10,7 @@ const Block blocks[] = {
 	BLOCK("sb-network",    	     1,         9),
 	BLOCK("sb-memory",    	     1,         8),
 	BLOCK("sb-cpu-temp",         1,         7),
-	BLOCK("sb-bluetooth",        600,       6),
+	BLOCK("sb-bluetooth",        1800,      6),
 	BLOCK("sb-volume",    	     0, 	5),
 	BLOCK("sb-keyboard-layout",  0,      	4),
 	BLOCK("sb-wifi",    	     10,        3),
