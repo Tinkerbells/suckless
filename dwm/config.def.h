@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 5;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const int gappx              = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -12,10 +12,11 @@ static const char *fonts[]          = { "FantasqueSansMono Nerd Font Mono:style:
 static const char base[]            = "#24273a";
 static const char text[]            = "#cad3f5";
 static const char overlay1[]        = "#8087a2";
+static const char yellow[]          = "#eed49f";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { text,      base,      base},
-	[SchemeSel]  = { overlay1,  base,       text},
+	[SchemeSel]  = { overlay1,  base,      yellow},
 };
 
 /* tagging */
