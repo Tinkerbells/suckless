@@ -2,21 +2,21 @@
 
 /* appearance */
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
-static const int gappx              = 8;        /* gaps between windows */
+static const int gappx              = 4;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FantasqueSansMono Nerd Font Mono:style:regular:size=10" };
+static const char *fonts[]          = { "FantasqueSansMono NF:style:regular:size=10" };
 
 /* Catppuccin Macchiato theme https://github.com/catppuccin/catppuccin */
 static const char base[]            = "#24273a";
 static const char text[]            = "#cad3f5";
 static const char overlay1[]        = "#8087a2";
-static const char yellow[]          = "#eed49f";
+static const char sky[]          = "#91d7e3";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { text,      base,      base},
-	[SchemeSel]  = { overlay1,  base,      yellow},
+	[SchemeSel]  = { overlay1,  base,      sky},
 };
 
 /* tagging */
@@ -65,6 +65,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
+#include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -74,6 +75,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,	                XK_q,      killclient,     {0} },
 	{ MODKEY|ControlMask,           XK_1,      setlayout,      {.v = &layouts[0]} },
