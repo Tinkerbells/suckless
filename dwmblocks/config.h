@@ -5,8 +5,8 @@
 const Block blocks[] = {
 	/* Block script name         time       signal */
 	BLOCK("sb-music",            0,         12),
-	BLOCK("sb-dollar",           1800,      11),
-	BLOCK("sb-bitcoin",          1800,      10),
+	BLOCK("sb-dollar",           3600,      11),
+	BLOCK("sb-bitcoin",          3600,      10),
 	BLOCK("sb-network",    	     1,         9),
 //      BLOCK("sb-memory",    	     1,         8),
 //	BLOCK("sb-cpu-temp",         1,         7),
