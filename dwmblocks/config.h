@@ -1,5 +1,5 @@
 #define CMDLENGTH 45
-#define DELIMITER ""
+#define DELIMITER " | "
 #define CLICKABLE_BLOCKS
 
 const Block blocks[] = {
@@ -12,7 +12,7 @@ const Block blocks[] = {
 //	BLOCK("sb-cpu-temp",         1,         7),
 	BLOCK("sb-bluetooth",        1800,      6),
 	BLOCK("sb-volume",    	     0, 	5),
-//	BLOCK("sb-keyboard-layout",  0, 	4),
+	BLOCK("sb-keyboard-layout",  1, 	4),
 	BLOCK("sb-wifi",    	     10,        3),
 	BLOCK("sb-battery",          30, 	2),
 	BLOCK("sb-time",    	     1, 	1),
