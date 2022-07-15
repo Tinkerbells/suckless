@@ -1,27 +1,27 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 5;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const int gappx = 5;                 /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 5;   /* systray spacing */
-static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static const int showsystray        = 1;     /* 0 means no systray */
+static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const int systraypinningfailfirst = 1 ;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
+static const int showsystray        = 0;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "FantasqueSansMono NF:style:regular:size=10" };
+static const char *fonts[]          = { "FantasqueSansMono NF:style:regular:size=9" };
 
 /* Catppuccin Macchiato theme https://github.com/catppuccin/catppuccin */
 static const char base[]            = "#24273a";
 static const char text[]            = "#cad3f5";
-static const char overlay1[]        = "#8087a2";
-static const char yellow[]          = "#eed49f";
+static const char surface1[]        = "#494d64";
+static const char lavender[]        = "#b7bdf8";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { text,      base,      base},
-	[SchemeSel]  = { overlay1,  base,      yellow},
+	[SchemeSel]  = { text,      surface1,  lavender},
 };
 
 /* tagging */
@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	{ NULL,                NULL,       "lf",          1 << 2,       3,             0,           -1 },
 	{ "TelegramDesktop",   NULL,       NULL,          1 << 2,       3,             0,           -1 },
 	{ NULL,                NULL,       "ncmpcpp",     1 << 3,       4,             0,           -1 },
+	{ NULL,                NULL,       "btop",        1 << 4,       5,             0,           -1 },
 	{ "qBittorrent",       NULL,       NULL,          1 << 4,       5,             0,           -1 },
 };
 
